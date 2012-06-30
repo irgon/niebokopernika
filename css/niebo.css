@@ -1,0 +1,1606 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, input, select, button
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border: none;
+    list-style: none;
+}
+
+a, a:visited {
+    color: #074590;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "HelveticaNeueLTProMdCn";
+    src: url(../fonts/helveticaneueltpro-mdcn-webfont.eot);
+}
+
+@font-face {
+    font-family: "HelveticaNeueLTProMdCn";
+    src: url(../fonts/helveticaneueltpro-mdcn-webfont.ttf);
+}
+
+@font-face {
+    font-family: "ForgottenFuturist";
+    src: url(../fonts/forgotten_futurist_rg-webfont.eot);
+}
+
+@font-face {
+    font-family: "ForgottenFuturist";
+    src: url(../fonts/forgotten_futurist_rg-webfont.ttf);
+}
+
+@font-face {
+    font-family: "ForgottenFuturist";
+    src: url(../fonts/forgotten_futurist_bd-webfont.eot);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "ForgottenFuturist";
+    src: url(../fonts/forgotten_futurist_bd-webfont.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Klavika";
+    src: url(../fonts/klavika-regular-webfont.eot);
+}
+
+@font-face {
+    font-family: "Klavika";
+    src: url(../fonts/klavika-regular-webfont.ttf);
+}
+
+@font-face {
+    font-family: "FrutCP";
+    src: url(../fonts/frutcp-webfont.eot);
+}
+
+@font-face {
+    font-family: "FrutCP";
+    src: url(../fonts/frutcp-webfont.ttf);
+}
+
+body {
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    color: #010914;
+    cursor: default;
+}
+
+input,
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #074590;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    border: 0 none;
+    padding: 0;
+}
+
+button {
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -ms-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    *overflow: visible;
+}
+
+button.button,
+a.button {
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 3px 0 0;
+    background: url(../img/button-right.png) no-repeat;
+    background-position: right top;
+    margin: 0;
+    float: left;
+    border: none;
+    white-space: nowrap;
+}
+
+button.button:hover,
+a.button:hover {
+    background-position: right -25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button.button div,
+a.button span {
+    display: block;
+    padding: 0 18px 0 21px;
+    text-align: center;
+    background: url(../img/button-left.png) no-repeat;
+    height: 25px;
+    line-height: 25px;
+    font-family: "HelveticaNeueLTProMdCn", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+button.button:hover div,
+a.button:hover span {
+    background-position: left -25px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button.big,
+a.big {
+    float: none;
+    background-position: right -50px;
+    height: 55px;
+}
+
+button.big:hover,
+a.big:hover {
+    float: none;
+    background-position: right -105px;
+    height: 55px;
+}
+
+button.big div,
+a.big span {
+    height: 55px;
+    line-height: 55px;
+    background-position: left -50px;
+}
+
+button.big:hover div,
+a.big:hover span {
+    background-position: left -105px;
+}
+
+#wrapper {
+    width: 978px;
+    margin: 0 auto;
+}
+
+#top {
+    overflow: hidden;
+    height: 153px;
+}
+
+#top #logo,
+#top #logo a {
+    width: 259px;
+    height: 109px;
+    display: block;
+    background: url(../img/logo.png) no-repeat;
+    text-indent: -1000em;
+    overflow: hidden;
+}
+
+#top #logo {
+    float: left;
+    margin: 26px 0 0 1px;
+}
+
+#top form {
+    float: right;
+    margin: 18px 0 25px 0;
+}
+
+#top form button {
+    float: left;
+    margin: 0 0 0 5px;
+}
+
+#top a.english {
+    float: right;
+    background: url(../img/en.png) no-repeat;
+    background-position: left center;
+    padding: 0 0 0 23px;
+    margin: 24px 23px 0 0;
+    text-decoration: none;
+}
+
+#top a.english:hover {
+    text-decoration: underline;
+}
+
+#top #search {
+    padding: 0 8px;
+    color: #9b9b9b;
+    width: 141px;
+    height: 25px;
+    line-height: 25px;
+    background: url(../img/search-input.png) no-repeat;
+    float: left;
+}
+
+#top #menu li,
+#top #menu li a {
+    font-family: "ForgottenFuturist", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #162983;
+    display: block;
+}
+
+#top #menu {
+    clear: right;
+    float: right;
+    *width: 680px;
+}
+
+#top #menu li {
+    float: left;
+    margin: 0 0 0 2px;
+}
+
+#top #menu li a {
+    padding: 29px 26px 14px 13px;
+    height: 21px;
+    background: url(../img/menu-bg.png) repeat;
+}
+
+#top #menu li.selected,
+#top #menu li:hover {
+    background: #2f4694 url(../img/menu-hover-bg-left.png) no-repeat;
+    background-position: left bottom;
+}
+
+#top #menu li.selected a,
+#top #menu li:hover a {
+    background: url(../img/menu-hover-bg-right.png) no-repeat;
+    background-position: right bottom;
+    color: #ffffff;
+}
+
+#content {
+    padding: 9px 10px;
+    background: #f2f2f2 url(../img/content-corner.png) no-repeat;
+    background-position: left top;
+}
+
+#content ul.breadcrumbs {
+    margin: 15px 0 34px;
+}
+
+#content ul.breadcrumbs li {
+    display: inline;
+    color: #074590;
+}
+
+#content ul.breadcrumbs li a {
+    color: #074590;
+    text-decoration: underline;
+}
+
+#content ul.breadcrumbs li a:hover {
+    text-decoration: none;
+}
+
+#content ul.breadcrumbs li:before {
+    content: " \00bb  ";
+}
+
+#content ul.breadcrumbs li:first-child:before {
+    content: "";
+}
+
+#content div.body {
+    background: #f2f2f2 url(../img/content-corner.png) no-repeat;
+    background-position: left bottom;
+    overflow: hidden;
+}
+
+#content #slider {
+    width: 958px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 0 20px;
+}
+
+#content div.columns {
+    overflow: hidden;
+    background: url(../img/columns.png) repeat-y;
+    padding: 1px 0;
+    position: relative;
+}
+
+#content div.columns div.columns-top,
+#content div.columns div.columns-bottom {
+    height: 1px;
+    width: 958px;
+    background: url(../img/column-corner.png) no-repeat;
+    position: absolute;
+    left: 0;
+}
+
+#content div.columns div.columns-top {
+    top: 0;
+}
+
+#content div.columns div.columns-bottom {
+    bottom: 0;
+}
+
+#content div.column-left,
+#content div.column-right {
+    width: 434px;
+    float: left;
+    background: #ffffff;
+    padding: 21px 20px;
+}
+
+#content div.column-left {
+    margin: 0 10px 0 0;
+}
+
+#content h2 {
+    font-family: "ForgottenFuturist", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #00060f;
+    font-weight: normal;
+    line-height: normal;
+    padding: 0 0 7px;
+    border-bottom: solid 2px #bbbdbf;
+}
+
+#content h2 a.more {
+    color: #074590;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    float: right;
+    margin: 6px 0 0;
+    text-decoration: underline;
+}
+
+#content h2 a.more:hover {
+    text-decoration: none;
+}
+
+#content div.article {
+    overflow: hidden;
+    margin: 29px 0 0 0;
+}
+
+#content div.article h4 {
+    margin: 0 0 6px;
+}
+
+#content div.article h4 a {
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration: underline;
+    color: #55860e;
+}
+
+#content div.article h4 a:hover {
+    text-decoration: none;
+}
+
+#content div.article p {
+    margin: 0 0 13px;
+}
+
+#content div.article.highlight p {
+    background: #e5f7fc;
+}
+
+#content div.article ul.meta li {
+    font-size: 11px;
+    line-height: 16px;
+    display: block;
+    height: 16px;
+    text-align: center;
+    float: left;
+    position: relative;
+    z-index: 1;
+    color: #959595;
+    margin: 0 0 0 -7px;
+    background: #f5f5f5 url(../img/category-date-bg.png) no-repeat;
+    background-position: right top;
+    padding: 0 15px;
+}
+
+#content div.article ul.meta li.category {
+    z-index: 2;
+    margin: 0;
+    padding: 0;
+}
+
+#content div.article ul.meta li.sky {
+    background: url(../img/category-blue.png) no-repeat;
+}
+
+#content div.article ul.meta li.planetarium {
+    background: url(../img/category-green.png) no-repeat;
+}
+
+#content div.article ul.meta li.category a {
+    color: #ffffff;
+    width: 89px;
+    height: 16px;
+    display: block;
+    text-decoration: none;
+}
+
+#content div.article ul.meta li.category a:hover {
+    text-decoration: underline;
+}
+
+#content div.repertoire {
+    padding: 10px 10px 26px;
+    overflow: hidden;
+    color: #696969;
+    background: url(../img/repertoire.png) no-repeat;
+    background-position: left bottom;
+}
+
+#content div.repertoire div.info {
+    overflow: hidden;
+    padding: 0 0 0 17px;
+}
+
+#content div.repertoire div.info a.button {
+    margin: 0 0 16px;
+}
+
+#content div.repertoire div.info cite {
+    display: block;
+    border-left: solid 2px #8eceeb;
+    background: #def3f9;
+    font-style: normal;
+    line-height: 15px;
+    padding: 22px 10px 9px;
+    color: #010914;
+    margin: 0 0 24px;
+}
+
+#content div.repertoire div.info strong {
+    font-family: Klavika, Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    color: #000000;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0 0 0 10px;
+}
+
+#content div.calendar {
+    position: relative;
+    float: left;
+    *width: 217px;
+}
+
+#content div.calendar h4 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #383838;
+    padding: 0 30px;
+    text-align: center;
+    height: 26px;
+    line-height: 26px;
+}
+
+#content div.calendar ul.cal-nav {
+    margin: -26px 0 0;
+    overflow: hidden;
+}
+
+#content div.calendar ul.cal-nav li a {
+    display: block;
+    width: 30px;
+    height: 26px;
+    overflow: hidden;
+    text-indent: -1000em;
+}
+
+#content div.calendar ul.cal-nav li.prev {
+    float: left;
+}
+
+#content div.calendar ul.cal-nav li.prev a {
+    background: url(../img/calendar-prev.png) no-repeat;
+}
+
+#content div.calendar ul.cal-nav li.prev a:hover {
+    background-position: left -26px;
+}
+
+#content div.calendar ul.cal-nav li.next {
+    float: right;
+}
+
+#content div.calendar ul.cal-nav li.next a {
+    background: url(../img/calendar-next.png) no-repeat;
+}
+
+#content div.calendar ul.cal-nav li.next a:hover {
+    background-position: left -26px;
+}
+
+#content div.calendar table {
+    border-collapse: collapse;
+}
+
+#content div.calendar table th {
+    font-weight: normal;
+    padding: 3px 0;
+    text-align: center;
+    font-size: 11px;
+}
+
+#content div.calendar table td {
+    padding: 0 1px 1px 0;
+}
+
+#content div.calendar table td a {
+    width: 24px;
+    height: 21px;
+    display: block;
+    padding: 5px 0 0 6px;
+    font-size: 11px;
+    color: #656061;
+    background: url(../img/calendar-cell.png) no-repeat;
+}
+
+#content div.calendar table td a:hover {
+    background: url(../img/calendar-marked.png) no-repeat;
+    color: #ffffff;
+}
+
+#content div.calendar table td.marked a {
+    background: url(../img/calendar-marked.png) no-repeat;
+    color: #ffffff;
+}
+
+#content div.calendar table td.empty a,
+#content div.calendar table td.empty a:hover {
+    background: url(../img/calendar-empty.png) no-repeat;
+}
+
+#content ul.shows li {
+    border-bottom: dashed 1px #e2e2e2;
+    padding: 0 3px 0 0;
+}
+
+#content ul.shows li a {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    display: block;
+}
+
+#content ul.shows li.even a {
+    background: #f7fcfd;
+}
+
+#content ul.shows li:hover {
+    background: url(../img/shows-hover-right.png) no-repeat;
+    background-position: right top;
+}
+
+#content ul.shows li:hover a {
+    background: url(../img/shows-hover-left.png) no-repeat;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#content ul.shows li a span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    margin: 0 10px 0 0;
+    text-align: right;
+    color: #696969;
+    padding: 0 20px 0 0;
+    background: url(../img/shows-clock.png) no-repeat;
+    background-position: right center;
+}
+
+#content ul.shows li a:hover span {
+    color: #ffffff;
+}
+
+#bottom {
+    background: url(../img/bottom.png) repeat-x;
+    background-position: left bottom;
+    padding: 12px 20px 18px 40px;
+    overflow: hidden;
+    width: 918px;
+    height: 98px;
+}
+
+#bottom h4 {
+    font-family: "FrutCP", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #595959;
+    font-weight: normal;
+    margin: 0 0 5px;
+}
+
+#bottom div.items {
+    overflow: hidden;
+    float: left;
+    display: none;
+}
+
+#bottom ul.organizers li {
+    float: left;
+    margin: 0 30px 0 0;
+}
+
+#bottom ul.partners li {
+    float: left;
+}
+
+#bottom ul.partners li a,
+#bottom ul.organizers li a {
+    height: 76px;
+    display: block;
+    text-indent: -1000em;
+    overflow: hidden;
+}
+
+#bottom ul.organizers li.msw a {
+    width: 179px;
+    background: url(../img/bottom-msw.png) no-repeat;
+}
+
+#bottom ul.organizers li.men a {
+    width: 245px;
+    background: url(../img/bottom-men.png) no-repeat;
+}
+
+#bottom ul.organizers li.mnisw a {
+    width: 245px;
+    background: url(../img/bottom-mnisw.png) no-repeat;
+}
+#bottom ul.partners {
+    margin: 0 0 0 40px;
+}
+
+#bottom ul.partners li.pko a {
+    width: 62px;
+    background: url(../img/bottom-pko.png) no-repeat;
+}
+
+#footer {
+    padding: 27px 10px 64px 0;
+}
+
+#footer ul.side {
+    float: right;
+}
+
+#footer ul.side li {
+    float: left;
+    margin: 0 0 0 16px;
+}
+
+#footer ul.side li a {
+    display: block;
+    height: 40px;
+    text-indent: -1000em;
+    overflow: hidden;
+}
+
+#footer ul.side li.cnk a {
+    width: 140px;
+    background: url(../img/footer-side-cnk.png) no-repeat;
+}
+
+#footer ul.side li.fb a {
+    width: 80px;
+    height: 30px;
+    margin: 3px 0 7px;
+    background: url(../img/footer-side-fb.png) no-repeat;
+}
+
+#footer ul.side li.blip a {
+    width: 47px;
+    background: url(../img/footer-side-blip.png) no-repeat;
+}
+
+#footer ul.links {
+    margin: 8px 0 7px;
+}
+
+#footer ul.links li {
+    display: inline;
+    margin: 0 9px 0 0;
+}
+
+#footer address,
+#footer address a {
+    color: #00b1e6;
+    font-style: normal;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+/* aktualnosci */
+#content div.highlightbox {
+    border-left: solid 5px #8eceeb;
+    background: #def3f9;
+    padding: 16px 25px;
+    overflow: hidden;
+    line-height: 14px;
+    margin: 0 0 30px;
+}
+
+#content div.highlightbox a.button {
+    float: none;
+}
+
+#content div.highlightbox h3 {
+    margin: 0 0 16px;
+}
+
+#content h3 {
+    color: #00060f;
+    font-family: "ForgottenFuturist", Arial, Helvetica, sans-serif;
+    font-size: 19px;
+    font-weight: normal;
+    margin: 0 0 20px;
+}
+
+#content h3.dot {
+    padding: 0 0 0 25px;
+    background: url(../img/header-dot.png) no-repeat;
+    background-position: left center;
+}
+
+#content div.joined div.columns {
+    background: #ffffff;
+}
+
+#content div.joined div.column-left.wide {
+    padding: 40px;
+    width: 620px;
+    margin: 0;
+}
+
+#content div.joined div.column-right.narrow {
+    width: 240px;
+    padding: 40px 18px 0 0;
+}
+
+#content div.highlightbox p {
+    margin: 0 0 13px;
+}
+
+#wrapper #content div.no-header {
+    padding-top: 77px;
+}
+
+#content div.settings {
+    background: #edf2ff url(../img/settings-top.png) no-repeat;
+}
+
+#content div.settings div.content {
+    background: #edf2ff url(../img/settings-bottom.png) no-repeat;
+    background-position: left bottom;
+    padding: 15px 20px;
+    overflow: hidden;
+}
+
+#content div.settings span,
+#content div.settings ul {
+    float: left;
+    margin: 0 9px 0 0;
+}
+
+#content div.settings.filters {
+    line-height: 24px;
+    margin: 0 0 19px;
+}
+
+#content div.settings.filters span {
+    color: #9d9d9d;
+}
+
+#content div.settings.filters select {
+    width: 169px;
+}
+
+#content div.settings.filters div.select,
+#content div.settings.filters label {
+    float: right;
+    margin: 0 0 0 12px;
+}
+
+#content div.settings ul {
+    margin: 0 63px 0 0;
+}
+
+#content div.settings ul li {
+    display: inline;
+    margin: 0 7px 0 0;
+}
+
+#content div.settings ul li a {
+    text-decoration: underline;
+}
+
+#content div.settings ul li.selected a {
+    color: #9d9d9d;
+    text-decoration: none;
+}
+
+#content form dl dd div.select,
+#content div.settings div.select {
+    float: left;
+    position: relative;
+    height: 22px;
+    border: solid 1px #d8dadc;
+    background: #ffffff url(../img/select.png) no-repeat;
+    background-position: right center;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    margin: -5px 8px 0 0;
+}
+
+#content form dl dd div.select span,
+#content div.settings div.select span {
+    display: block;
+    line-height: 22px;
+    padding: 0 22px 0 12px;
+    height: 22px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: #074590;
+    *display: none !important;
+}
+
+#content form dl dd div.select select,
+#content div.settings div.select select {
+    opacity: 0;
+    height: 22px;
+}
+
+#content div.settings div.select select[name="month"] {
+    width: 138px;
+}
+
+#content div.settings div.select + div.select {
+    margin-right: 0;
+}
+
+#content div.settings div.select select[name="year"] {
+    width: 88px;
+}
+
+#content div.column-left.wide p {
+    margin: 0 0 20px 0;
+}
+
+#content div.column-left.wide div.article {
+    margin: 29px 0 13px 0;
+    padding: 0 65px 0 0;
+    position: relative;
+}
+
+#content div.column-left.wide div.article p {
+    margin: 0;
+}
+
+#content div.column-left.wide div.article ul.meta {
+    float: left;
+    width: 138px;
+}
+
+#content div.column-left.wide div.article ul.meta li {
+    display: list-item;
+    padding: 0;
+    margin: 0 0 10px;
+}
+
+#content div.column-left.wide div.article ul.meta li + li {
+    background: none;
+}
+
+#content div.column-left.wide div.article a.more {
+    display: block;
+    width: 50px;
+    height: 25px;
+    margin: 0 0 0 15px;
+    text-indent: -1000em;
+    overflow: hidden;
+    background: #cc0000;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url(../img/more-button.png) no-repeat;
+}
+
+#content div.column-left.wide div.article a.more:hover {
+    background-position: left -25px;
+}
+
+#content div.column-left.wide div.article div {
+    width: 414px;
+    float: right;
+}
+
+#content ul.gallery {
+    margin: 0 0 25px -6px;
+    overflow: hidden;
+}
+
+#content ul.gallery li,
+#content ul.gallery li a,
+#content ul.gallery li img {
+    width: 150px;
+    height: 110px;
+    display: block;
+    text-indent: -1000em;
+    overflow: hidden;
+    background: #f1f1f1;
+}
+
+#content ul.gallery.wide {
+    margin: 0 0 25px -20px;
+}
+
+#content ul.gallery.wide li,
+#content ul.gallery.wide li a,
+#content ul.gallery.wide li img {
+    width: 300px;
+    height: 160px;
+}
+
+#content ul.gallery li {
+    margin: 0 0 0 6px;
+    float: left;
+}
+
+#content ul.gallery.wide li {
+    margin: 0 0 0 20px;
+}
+
+#content ul.nav {
+    overflow: hidden;
+    margin: 0 0 0 105px;
+}
+
+#content ul.nav li {
+    float: left;
+    margin: 0 0 0 8px;
+    overflow: hidden;
+}
+
+#content ul.submenu {
+    border: solid 1px #d1d1d1;
+    padding: 14px 11px;
+    margin: 0 0 19px;
+    background: #f1f1f1;
+}
+
+#content ul.submenu li {
+    margin: 0 0 1px;
+}
+
+#content ul.submenu li a {
+    display: block;
+    height: 23px;
+    line-height: 23px;
+    text-decoration: none;
+    color: #2f4694;
+    padding: 0 0 0 19px;
+}
+
+#content ul.submenu li a:hover {
+    text-decoration: underline;
+}
+
+#content ul.submenu li.selected a {
+    border-left: solid 9px #2f4694;
+    padding: 0 0 0 10px;
+    background: #ffffff;
+}
+
+#content ul.submenu li.selected a:hover {
+    text-decoration: none;
+}
+
+#content ul.prices {
+    margin: 0 0 20px;
+}
+
+#content ul.prices li {
+    margin: 0 0 1px;
+}
+
+#content ul.prices li.odd {
+    background: #edf2ff url(../img/settings-top.png) no-repeat;
+}
+
+#content ul.prices li.odd div {
+    background: url(../img/settings-bottom.png) no-repeat;
+    background-position: left bottom;
+}
+
+#content ul.prices li div {
+    height: 23px;
+    color: #5f5f5f;
+    line-height: normal;
+    font-size: 11px;
+    padding: 11px 0;
+}
+
+#content ul.prices li.oneline div {
+    line-height: 23px;
+}
+
+#content ul.prices li div strong {
+    display: block;
+    float: left;
+    height: 23px;
+    line-height: 23px;
+    font-weight: normal;
+    font-size: 12px;
+    padding: 0 0 0 31px;
+    width: 188px;
+}
+
+#content ul.prices li div em {
+    display: block;
+    float: right;
+    height: 23px;
+    line-height: 23px;
+    font-weight: bold;
+    font-style: normal;
+    color: #2f4694;
+    font-size: 12px;
+    padding: 0 33px 0 0;
+}
+
+#content form dl {
+    overflow: hidden;
+    padding: 5px 0;
+    margin: 0 0 23px;
+    position: relative;
+}
+
+#content form dl dt,
+#content form dl dd {
+    float: left;
+    height: 24px;
+    padding: 6px 0;
+    line-height: 24px;
+    margin: 0 0 1px;
+}
+
+#content form dl dt {
+    width: 163px;
+    clear: left;
+}
+
+#content form.way input,
+#content form dl dd input {
+    width: 231px;
+    padding: 0 5px;
+    height: 24px;
+    background: url(../img/input.png) no-repeat;
+}
+
+#content form dl dd.textarea {
+    height: auto;
+}
+
+#content form dl dd textarea {
+    width: 401px;
+    height: 44px;
+    padding: 5px;
+    background: url(../img/textarea.png) no-repeat;
+    border: none;
+    min-width: 401px;
+    max-width: 401px;
+    min-height: 44px;
+    max-height: 44px;
+    resize: none;
+}
+
+#content form dl dd div.select {
+    float: none;
+    margin: 0;
+}
+
+#content form dl dd div.select select {
+    width: 239px;
+}
+
+#content form dl dd #captcha-img {
+    position: absolute;
+    right: 46px;
+    bottom: 12px;
+    border: solid 1px #dddfe1;
+}
+
+#content cite.info,
+#content form cite {
+    font-style: normal;
+    font-size: 11px;
+    color: #747474;
+    float: right;
+}
+
+#content cite.info {
+    margin: 0 0 20px;
+}
+
+#content form div.show {
+    margin: 0 0 36px;
+}
+
+#content form div.show ul {
+    margin: 15px 0 0 -6px;
+    overflow: hidden;
+}
+
+#content form div.show ul li {
+    width: 150px;
+    height: 90px;
+    float: left;
+    margin: 0 0 0 6px;
+    background: url(../img/terms-bg.png) repeat-x;
+    border-top: solid 4px #2f4694;
+}
+
+#content form div.show ul li label {
+    width: 70px;
+    padding: 8px 45px 0;
+    text-align: center;
+    height: 82px;
+    display: block;
+    position: relative;
+}
+
+#content form div.show.stars ul {
+    margin: 15px 0 0 -5px;
+}
+
+#content form div.show.stars ul li {
+    border: none;
+    background: none;
+    width: 120px;
+    height: 145px;
+    margin: 0 0 0 5px;
+}
+
+#content form div.show.stars ul li label {
+    width: 120px;
+    height: 145px;
+    padding: 0;
+}
+
+#content form div.show.stars ul li label img {
+    border: solid 1px #074590;
+    width: 118px;
+    height: 118px;
+    display: block;
+}
+
+#content form div.show ul li label input {
+    position: absolute;
+    left: 50%;
+    bottom: 2px;
+    margin: 0 0 0 -8px;
+}
+
+#content form div.show ul li label input[type="text"] {
+    position: absolute;
+    left: 50%;
+    margin: 0 0 0 -8px;
+    bottom: 0;
+}
+
+#content form fieldset > label {
+    font-size: 11px;
+    color: #747474;
+    display: block;
+    margin: 0 0 17px;
+    width: 520px;
+    line-height: 15px;
+}
+
+#content form fieldset > label input {
+    margin: 0 14px 0 0;
+    float: left;
+}
+
+#content form fieldset > label span {
+    display: block;
+    overflow: hidden;
+}
+
+#content form fieldset > cite {
+    font-style: normal;
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 0 0 16px;
+}
+
+#content form fieldset button.button {
+    margin: 0 auto;
+    float: none;
+    width: 225px;
+}
+
+#content address.contact {
+    font-style: normal;
+    margin: 0 0 29px;
+    padding: 4px 0 0;
+    overflow: hidden;
+}
+
+#content address.contact span {
+    display: block;
+    float: left;
+    text-align: center;
+    background: #def3f9;
+    width: 156px;
+    padding: 19px 58px;
+    margin: -4px 54px 0 0;
+}
+
+#content address.contact span strong {
+    font-weight: normal;
+    font-family: "Klavika", Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    display: block;
+    margin: 12px 0 0 0;
+}
+
+#content address.contact em {
+    display: block;
+    font-style: normal;
+    color: #747474;
+    margin: 10px 0 0;
+}
+
+#flashmsg {
+    border: solid 1px #6aa500;
+    background: #f6faf0;
+    padding: 27px;
+    text-align: center;
+}
+
+#content a.button.center {
+    margin: 30px auto 0;
+    width: 200px;
+    float: none;
+}
+
+#content #calendar-slider {
+    margin: 0 0 13px;
+}
+
+#content div.videos {
+    overflow: hidden;
+}
+
+#content #video {
+    float: left;
+}
+
+#content div.side {
+    width: 152px;
+    float: right;
+}
+
+#content div.side ul.shows {
+    margin: 0 0 11px;
+}
+
+#content ul.social {
+    margin: 8px 0 20px -2px;
+    height: 22px;
+}
+
+#content ul.social li {
+    margin: 0 0 0 2px;
+    float: left;
+}
+
+#content ul.social li a {
+    display: block;
+    width: 20px;
+    height: 22px;
+    text-indent: -1000em;
+    overflow: hidden;
+}
+
+#content ul.social li.facebook a {
+    background: url(../img/social-facebook.png) no-repeat;
+}
+
+#content ul.social li.twitter a {
+    background: url(../img/social-twitter.png) no-repeat;
+}
+
+#content ul.social li.email a {
+    background: url(../img/social-email.png) no-repeat;
+}
+
+#content ul.social li.other a {
+    background: url(../img/social-other.png) no-repeat;
+}
+
+#content ul.social li.nk a {
+    background: url(../img/social-nk.png) no-repeat;
+}
+
+#content ul.social li.blip a {
+    background: url(../img/social-blip.png) no-repeat;
+}
+
+#content ul.social li.wykop a {
+    background: url(../img/social-wykop.png) no-repeat;
+}
+
+#content div.side > span {
+    display: block;
+    overflow: hidden;
+    line-height: normal;
+    padding: 7px 0 3px 0;
+}
+
+#content div.side span strong {
+    float: right;
+    font-weight: normal;
+    font-family: "Klavika", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: normal;
+    margin: -7px 0 0 0;
+}
+
+#content div.side a.button {
+    float: none;
+    margin: 23px 0 0;
+}
+
+#content ul.videos-slider {
+    overflow: hidden;
+    margin: 10px 0 40px;
+    padding: 1px 0;
+}
+
+#content ul.videos-slider li,
+#content ul.videos-slider li a,
+#content ul.videos-slider li a img {
+    display: block;
+    width: 90px;
+    height: 60px;
+    background: #f1f1f1;
+    text-indent: -1000em;
+    overflow: hidden;
+}
+
+#content ul.videos-slider li {
+    float: left;
+    margin: 0 0 0 2px;
+}
+
+#content ul.videos-slider li:hover {
+    outline: solid 1px #2f4694;
+}
+
+#content ul.videos-slider li.prev,
+#content ul.videos-slider li.next {
+    width: 30px;
+}
+
+#content ul.videos-slider li.prev {
+    margin: 0 7px 0 0;
+}
+
+#content ul.videos-slider li.next {
+    margin: 0 0 0 7px;
+}
+
+#content ul.videos-slider li.prev a,
+#content ul.videos-slider li.next a {
+    display: block;
+    width: 30px;
+    height: 60px;
+    background: url(../img/videos-buttons.png) no-repeat;
+    padding: 0;
+}
+
+#content ul.videos-slider li.prev a {
+    background-position: 0 0;
+}
+
+#content ul.videos-slider li.prev a:hover {
+    background-position: 0 -60px;
+}
+
+#content ul.videos-slider li.next a {
+    background-position: -30px 0;
+}
+
+#content ul.videos-slider li.next a:hover {
+    background-position: -30px -60px;
+}
+
+#content div.column-left.wide > a.more {
+    display: block;
+    text-align: right;
+    margin: 0 0 9px;
+}
+
+#content form.comment {
+    background: #edf2ff url(../img/settings-top.png) no-repeat;
+    margin: 28px 0;
+}
+
+#content form.comment fieldset {
+    background: url(../img/settings-bottom.png) no-repeat;
+    background-position: left bottom;
+    padding: 11px 19px 12px 20px;
+}
+
+#content form.comment textarea {
+    width: 369px;
+    height: 50px;
+    padding: 5px 10px;
+    border: solid 1px #d8dadc;
+    float: left;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    min-width: 369px;
+    max-width: 369px;
+    min-height: 50px;
+    resize: vertical;
+    margin: 0 18px 0 0;
+    background: #ffffff;
+}
+
+#content form.comment input {
+    display: block;
+    padding: 0 10px;
+    height: 22px;
+    line-height: 22px;
+    border: solid 1px #d8dadc;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius: 3px;
+    background: #ffffff;
+    width: 150px;
+}
+
+#content form.comment button.button {
+    width: 169px;
+    margin: 13px 0 0 0;
+}
+
+#content ul.comments {
+    margin: 0 0 30px 0;
+}
+
+#content ul.comments li {
+    overflow: hidden;
+}
+
+#wrapper #content ul.comments li p {
+    overflow: hidden;
+    padding: 15px 20px;
+    margin: 0;
+}
+
+#content ul.comments li.odd p {
+    background: #f2f2f2;
+}
+
+#content ul.comments li ul.meta {
+    width: 152px;
+    float: right;
+    padding: 15px 0;
+    text-align: right;
+}
+
+#content ul.comments li ul.meta li.date {
+    font-size: 11px;
+    color: #959595;
+}
+
+#content a.button.right {
+    float: right;
+}
+
+#content img.decor {
+    margin: 0 0 22px;
+}
+
+#content ul.list li {
+    padding: 0 0 0 50px;
+    background: url(../img/list-dot.png) no-repeat;
+    background-position: 25px center;
+}
+
+#content p a {
+    text-decoration: underline;
+}
+
+#content #map {
+    margin: 0 0 30px;
+}
+
+#content ul.waytabs {
+    overflow: hidden;
+    padding: 1px;
+    border-bottom: solid 1px #bbbdbf;
+    margin: 0 0 30px;
+}
+
+#content ul.waytabs li {
+    display: block;
+    float: left;
+    margin: 0 2px 0 0;
+}
+
+#content ul.waytabs li a {
+    display: block;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #010914;
+    background: #f1f1f1;
+}
+
+#content ul.waytabs li a:hover {
+    text-decoration: underline;
+}
+
+#content ul.waytabs li.selected a {
+    background: #55860e;
+    color: #ffffff;
+}
+
+#content form.way {
+    overflow: hidden;
+    margin: 0 0 30px 0;
+}
+
+#content form.way input {
+    float: left;
+    margin: 0 34px 0 0;
+}
+
+#content form.way button.button {
+    float: left;
+    width: 180px;
+}
